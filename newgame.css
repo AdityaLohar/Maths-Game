@@ -1,0 +1,374 @@
+html{
+    height: 100%;
+    background-color: #132D3E;
+    
+    
+}
+
+#container{
+    height: 37rem;
+    width: 54rem;
+    margin: 4rem auto;
+    background-color: #0A192F;
+    box-shadow: 0px 0px 10px  #040b14,
+    0px 0px 20px  #040b14,
+    0px 0px 30px  #040b14,
+    0px 0px 40px  #040b14;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#score{
+    
+    background-color: #1D4753;
+    color: #4ABBA8;
+    position: absolute;
+    padding: 1rem 1.8rem;
+    margin-left: 47.2rem;
+}
+#correct{
+    background-color: rgb(7, 107, 3);
+    color: white;
+    position: absolute;
+    padding: 1rem 1.8rem;
+    margin-left: 23rem;
+    display: none;
+}
+#wrong{
+    background-color: rgb(110, 2, 2);
+    color: white;
+    position: absolute;
+    padding: 1rem 1.8rem;
+    margin-left: 23rem;
+    display: none;
+}
+
+#question{
+    height: 12rem;
+    width: 36rem;
+    background-color: #112240;
+    margin: 5rem auto 1rem auto;
+    font-size: 7rem;
+    text-align: center;
+    font-family: cursive;
+    color: #4ABBA8;
+}
+
+#instruction{
+    height: 5rem;
+    width: 36rem;
+    margin: 0rem auto 1rem auto;
+    background-color: #112240;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #4ABBA8;
+    line-height: 4.7rem;
+}
+
+#choices{
+    height: 8rem;
+    width: 36rem;
+    margin: 1px auto;
+}
+.box{
+    height: 7rem;
+    width: 7.2rem;
+    float: left;
+    background-color: #62c0ff;
+    margin-right: 2.4rem;
+    border-radius: 0.2rem;
+    position: relative;
+    text-align: center;
+    color: black;
+    line-height: 7rem;
+    font-size: 1.5rem;
+}
+#box4{
+    margin-right: 0rem;
+}
+
+.box:hover{
+    background-color: rgb(164, 237, 255);
+    cursor: pointer;
+}
+
+.box:active{
+    box-shadow: 0px 0px;
+    top: 5px;
+}
+
+#startgame{
+    height: 1.9rem;
+    width: 5.9rem;
+    background-color: transparent;
+    border: solid 2px #4ABBA8;
+    color: #4ABBA8;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin: 1rem auto ;
+    border-radius: 0.2rem;
+    position: relative;
+}
+#startgame:hover{
+    background-color: #4abba821;
+    cursor: pointer;
+}
+
+#startgame:active{
+    box-shadow: 0px 0px;
+    top: 5px;
+}
+
+#time{
+    height: 1.3rem;
+    width: 12rem;
+    background-color: #1D4753;
+    padding: 1rem;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    border-radius: 0.2rem;
+    display: none;
+    color: #4ABBA8;
+}
+   
+#gameover{
+    height: 18rem;
+    width: 25rem;
+    background: linear-gradient(rgb(255, 174, 0),rgb(255, 30, 21));
+    position: absolute;
+    top: 8rem;
+    left: 14rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border: solid 1px black;
+    display: none;
+}
+
+@media (min-width: 790px) and (max-width: 930px) {
+    #container{
+        width: 46rem;
+    }
+    #score{
+        margin-left: 39.2rem;
+    }
+    #gameover{
+        left: 9.5rem;
+    }
+    #correct{
+    margin-left: 20rem;
+    }
+    #wrong{
+        margin-left: 20rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 789px) {
+    #container{
+        width: 40rem;
+        height: 35rem;
+    }
+    #score{
+        margin-left: 33.2rem;
+    }
+    #startgame{
+        height: 1.5rem;
+         width: 5rem;
+         font-size: 1rem;
+    }
+    .box{
+        height: 6.5rem;
+        width: 6.7rem;
+        margin-right: 3rem;
+    }
+    #box4{
+        margin-right: 0%;
+    }
+    #time{
+        height: 1.1rem;
+        width: 10rem;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        border-radius: 0.2rem;
+        display: none;
+        color: #4ABBA8;
+    }
+    #gameover{
+        left: 6.5rem;
+    }
+    #question{
+        height: 10rem;
+        width: 30rem;
+    }
+    #instruction{
+        width: 30rem;
+    } 
+    #correct, #wrong{
+        margin-left: 17rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    #container{
+        width: 35rem;
+        height: 30rem;
+    }
+    #score{
+        margin-left: 29rem;
+        width: 2rem;
+        height: 1rem;
+        text-align: center;
+        padding-left: 1rem ;
+    }
+    #startgame{
+        height: 1rem;
+        width: 5rem;
+        font-size: 0.9rem;
+        padding: 0rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        margin: 0rem auto ;
+         
+    }
+    .box{
+        height: 5rem;
+        width: 5rem;
+        margin-right: 1.66rem;
+        font-size: 1.5rem;
+        line-height: 5rem;
+    }
+    #box1{
+        margin-left: 5rem;
+    }
+    #box4{
+        margin-right: 0%;
+    }
+    #time{
+        height: 1.1rem;
+        width: 7rem;
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        border-radius: 0.2rem;
+        display: none;
+        color: #4ABBA8;
+    }
+    #gameover{
+        left: 6.5rem;
+        height: 14rem;
+        width: 20rem;
+        font-size: 2.4rem;
+    }
+    #question{
+        height: 8rem;
+        width: 25rem;
+        font-size: 5rem;
+    }
+    #instruction{
+        width: 25rem;
+        height: 5rem;
+        font-size: 1.4rem;
+    } 
+    #correct, #wrong{
+        margin-left: 15rem;
+        width: 3rem;
+        height: 0.7rem;
+        font-size: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+    #container{
+        width: 25rem;
+        height: 27rem;
+        margin: 2rem auto;
+    }
+    #score{
+        margin-left: 20rem;
+        width: 20px;
+        height: 2px;
+        font-size: 13px;
+        line-height: 0.5rem;
+        text-align: center;
+        padding-left: 1rem ;
+    }
+    #startgame{
+        height: 1rem;
+        width: 5rem;
+        font-size: 0.9rem;
+        padding: 0rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        margin: 0rem auto ;
+         
+    }
+    .box{
+        height: 4.4rem;
+        width: 4.4rem;
+        margin-right: 0.8rem;
+        font-size: 1.2rem;
+        line-height: 5rem;
+    }
+    #box1{
+        margin-left: 2.4rem;
+    }
+    #box4{
+        margin-right: 0%;
+    }
+    #time{
+        height: 5px;
+        width: 5rem;
+        font-size: 10px;
+        position: absolute;
+        bottom: 1.7rem;
+        right: 1rem;
+        border-radius: 0.2rem;
+        display: none;
+        padding-bottom:1rem;
+        padding-left: 0%;
+        padding-right: 0%;
+        text-align: center;
+        color: #4ABBA8;
+    }
+    #gameover{
+        left: 1.5rem;
+        height: 14rem;
+        width: 20rem;
+        font-size: 2.4rem;
+    }
+    #question{
+        height: 6rem;
+        width: 20rem;
+        font-size: 4rem;
+    }
+    #instruction{
+        width: 20rem;
+        height: 3rem;
+        font-size: 1rem;
+        line-height: 3rem;
+    } 
+    #correct, #wrong{
+        margin-left: 10rem;
+        width: 3rem;
+        height: 0.7rem;
+        font-size: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+    
